@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html class="dark" dir="rtl" lang="fa"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dropball | دراپ‌بال - تکنولوژی و هیجان فوتبال</title>
+<meta name="description" content="دراپ‌بال - بازی کوییز فوتبالی زنده. دانش فوتبالی خود را به رخ بکشید، جایزه ببرید و در بزرگترین جامعه فوتبالی ایران رقابت کنید."/>
+<meta name="keywords" content="دراپ‌بال, بازی فوتبال, کوییز فوتبال, بازی آنلاین, جایزه, لیگ, رقابت"/>
+<meta name="author" content="Dropball"/>
+<meta property="og:title" content="Dropball | دراپ‌بال - تکنولوژی و هیجان فوتبال"/>
+<meta property="og:description" content="دراپ‌بال - بازی کوییز فوتبالی زنده. دانش فوتبالی خود را به رخ بکشید، جایزه ببرید."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://dropball.ir"/>
+<meta property="og:image" content="https://lh3.googleusercontent.com/aida-public/AB6AXuA4LlmuQZ__GLgSjHuUOn1KVF4D69LZjlg3lk60Xfi_8wdb5DJuSi4YfGiQ3vhizK0td9iL59hlwCwAORoIW5uDbngGPjGAIktTlkx7-vI8SvNlW6vcm0lz2FyapWzfXJdZUSCFVfn4ala-Feeu4uZEtQRRyq8-SIxe25iBGiiCBiKlo7IpWj_Gk0-iYgWo3K2dfsHgFlag5VVMfnRHZb9A3MEmoCkfZRzg1eWUe_zGtwHVzkpuCBWyTpq15ZV9CowsobBycaMyoEM"/>
+<meta property="og:locale" content="fa_IR"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Dropball | دراپ‌بال - تکنولوژی و هیجان فوتبال"/>
+<meta name="twitter:description" content="دراپ‌بال - بازی کوییز فوتبالی زنده. دانش فوتبالی خود را به رخ بکشید، جایزه ببرید."/>
+<meta name="twitter:image" content="https://lh3.googleusercontent.com/aida-public/AB6AXuA4LlmuQZ__GLgSjHuUOn1KVF4D69LZjlg3lk60Xfi_8wdb5DJuSi4YfGiQ3vhizK0td9iL59hlwCwAORoIW5uDbngGPjGAIktTlkx7-vI8SvNlW6vcm0lz2FyapWzfXJdZUSCFVfn4ala-Feeu4uZEtQRRyq8-SIxe25iBGiiCBiKlo7IpWj_Gk0-iYgWo3K2dfsHgFlag5VVMfnRHZb9A3MEmoCkfZRzg1eWUe_zGtwHVzkpuCBWyTpq15ZV9CowsobBycaMyoEM"/>
+<meta name="theme-color" content="#39FF14"/>
+<link rel="canonical" href="https://dropball.ir"/>
+<link rel="manifest" href="manifest.json"/>
+<link rel="apple-touch-icon" href="https://lh3.googleusercontent.com/aida-public/AB6AXuA4LlmuQZ__GLgSjHuUOn1KVF4D69LZjlg3lk60Xfi_8wdb5DJuSi4YfGiQ3vhizK0td9iL59hlwCwAORoIW5uDbngGPjGAIktTlkx7-vI8SvNlW6vcm0lz2FyapWzfXJdZUSCFVfn4ala-Feeu4uZEtQRRyq8-SIxe25iBGiiCBiKlo7IpWj_Gk0-iYgWo3K2dfsHgFlag5VVMfnRHZb9A3MEmoCkfZRzg1eWUe_zGtwHVzkpuCBWyTpq15ZV9CowsobBycaMyoEM"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;400;700;900&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --neon-green: #39FF14;
+            --deep-navy: #050B18;
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.1);
+        }
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            background-color: var(--deep-navy);
+            color: white;
+            overflow-x: hidden;
+        }
+        .glass-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--glass-border);
+            border-radius: 1.5rem;
+        }
+        .neon-shadow {
+            box-shadow: 0 0 20px rgba(57, 255, 20, 0.3);
+        }
+        .neon-text {
+            text-shadow: 0 0 10px rgba(57, 255, 20, 0.5);
+        }
+        .bg-mesh {
+            background-image: 
+                radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
+                radial-gradient(at 50% 0%, hsla(145,100%,50%,0.1) 0, transparent 50%), 
+                radial-gradient(at 100% 0%, hsla(225,39%,30%,1) 0, transparent 50%);
+        }
+        .floating-shape {
+            position: absolute;
+            background: linear-gradient(45deg, var(--neon-green), transparent);
+            opacity: 0.1;
+            filter: blur(40px);
+            border-radius: 50%;
+            z-index: -1;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .fade-in-right {
+            opacity: 0;
+            transform: translateX(-30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .fade-in-right.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .fade-in-left {
+            opacity: 0;
+            transform: translateX(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .fade-in-left.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .scale-in {
+            opacity: 0;
+            transform: scale(0.9);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .scale-in.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(57, 255, 20, 0.3); }
+            50% { box-shadow: 0 0 40px rgba(57, 255, 20, 0.5); }
+        }
+        .pulse-animation {
+            animation: pulse-glow 2s ease-in-out infinite;
+        }
+        .counter-value {
+            font-size: 3rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #39FF14, #00FF88);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .accordion-content.open {
+            max-height: 500px;
+        }
+        .loading-skeleton {
+            background: linear-gradient(90deg, rgba(255,255,255,0.05) 25%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.05) 75%);
+            background-size: 200% 100%;
+            animation: skeleton-loading 1.5s infinite;
+        }
+        @keyframes skeleton-loading {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+        @keyframes loading {
+            0% { width: 0%; }
+            50% { width: 70%; }
+            100% { width: 100%; }
+        }
+        img {
+            transition: opacity 0.3s ease-in-out;
+        }
+        img[loading="lazy"] {
+            opacity: 0;
+        }
+        img[loading="lazy"].loaded {
+            opacity: 1;
+        }
+    </style>
+ </head>
+ <body class="bg-mesh min-h-screen">
+<div id="preloader" class="fixed inset-0 z-[100] flex items-center justify-center bg-[#050B18]">
+<div class="text-center">
+<div class="relative">
+<div class="h-16 w-16 mx-auto mb-6 rounded-2xl bg-[#39FF14] neon-shadow flex items-center justify-center animate-pulse">
+<span class="material-symbols-outlined text-4xl text-black">sports_soccer</span>
+</div>
+<div class="absolute inset-0 h-16 w-16 mx-auto rounded-2xl bg-[#39FF14]/20 blur-xl animate-ping"></div>
+</div>
+<h2 class="text-2xl font-black text-white mb-2">دراپ‌بال</h2>
+<div class="w-48 h-1 bg-white/10 rounded-full overflow-hidden mx-auto">
+<div class="h-full bg-gradient-to-r from-[#39FF14] to-green-500 animate-[loading_1.5s_ease-in-out_infinite]" style="width: 60%"></div>
+</div>
+<p class="mt-4 text-gray-400 text-sm">در حال بارگذاری...</p>
+</div>
+</div>
+<noscript>
+<div class="fixed inset-0 z-[100] flex items-center justify-center bg-[#050B18] p-6">
+<div class="text-center">
+<span class="material-symbols-outlined text-6xl text-[#39FF14] mb-4">error</span>
+<h1 class="text-2xl font-black text-white mb-2">جاوا اسکریپت غیرفعال است</h1>
+<p class="text-gray-400">برای تجربه بهتر، جاوا اسکریپت را فعال کنید.</p>
+</div>
+</div>
+</noscript>
+<div class="relative w-full overflow-hidden">
+<div class="floating-shape w-96 h-96 -top-20 -left-20"></div>
+<div class="floating-shape w-64 h-64 top-1/2 -right-10"></div>
+<div class="floating-shape w-80 h-80 bottom-0 left-1/3"></div>
+ <nav class="sticky top-0 z-50 w-full border-b border-white/5 bg-deep-navy/40 backdrop-blur-xl" role="navigation" aria-label="اصلی">
+<div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
+<div class="flex items-center gap-10">
+<div class="flex items-center gap-3">
+<div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#39FF14] text-black neon-shadow" aria-hidden="true">
+<span class="material-symbols-outlined text-3xl font-bold">sports_soccer</span>
+</div>
+<h1 class="text-2xl font-black tracking-tighter text-white">دراپ‌بال</h1>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium text-gray-400 hover:text-[#39FF14] transition-all" href="#features" aria-label="برو به بخش ویژگی‌ها">ویژگی‌ها</a>
+<a class="text-sm font-medium text-gray-400 hover:text-[#39FF14] transition-all" href="#download" aria-label="برو به بخش دانلود">نصب اپلیکیشن</a>
+<a class="text-sm font-medium text-gray-400 hover:text-[#39FF14] transition-all" href="#" aria-label="مشاهده لیگ‌های برتر">لیگ‌های برتر</a>
+</div>
+</div>
+ <div class="flex items-center gap-4">
+<button class="hidden sm:flex items-center justify-center rounded-full bg-white/5 border border-white/10 px-6 py-2.5 text-sm font-bold text-white hover:bg-white/10 transition-all" aria-label="ورود به حساب کاربری">
+                        ورود به حساب
+                    </button>
+<div class="h-10 w-10 rounded-full border-2 border-[#39FF14]/50 p-0.5 overflow-hidden" aria-label="پروفایل کاربر">
+<picture>
+<source srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuCTueKiFZcvppmco_d6t4DA9qaGFO05pmr50zrOlbWZI_kuCU7ajUgqN-UpSy_AajgU1hOGgvu4ohsAd8CaFi9d_SVqm_aPQ1Gnzb2aUZJ1SlLDfthKhWi5PGFNvpY70R4owQ5C-BCp45hZvc1vaMnm7mLkq8pd4M6Dkfv4eW1XebKd24hpL3bH9doRPGzwCCfS7BuSMIZiWxGjnOrhl8uKHPeXtt7fks7_DquUlfPBrFPZvS47bx8TAwtmcUedizI5z0H0miGN5eE" type="image/webp">
+<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTueKiFZcvppmco_d6t4DA9qaGFO05pmr50zrOlbWZI_kuCU7ajUgqN-UpSy_AajgU1hOGgvu4ohsAd8CaFi9d_SVqm_aPQ1Gnzb2aUZJ1SlLDfthKhWi5PGFNvpY70R4owQ5C-BCp45hZvc1vaMnm7mLkq8pd4M6Dkfv4eW1XebKd24hpL3bH9doRPGzwCCfS7BuSMIZiWxGjnOrhl8uKHPeXtt7fks7_DquUlfPBrFPZvS47bx8TAwtmcUedizI5z0H0miGN5eE" alt="تصویر پروفایل" class="w-full h-full rounded-full object-cover" loading="lazy" decoding="async">
+</picture>
+</div>
+</div>
+</div>
+</nav>
+<section class="relative px-6 py-16 md:py-32">
+<div class="mx-auto max-w-7xl flex flex-col items-center gap-16 lg:flex-row">
+<div class="flex flex-1 flex-col items-start gap-8 text-right z-10">
+<div class="inline-flex items-center gap-2 rounded-full bg-[#39FF14]/10 border border-[#39FF14]/20 px-4 py-2 text-[#39FF14]">
+<span class="material-symbols-outlined text-base">verified</span>
+<span class="text-xs font-black uppercase tracking-widest">نسل جدید کوییز فوتبالی</span>
+</div>
+<h1 class="text-5xl font-black leading-[1.2] text-white md:text-8xl">
+                        هیجان خالص<br/>
+<span class="text-[#39FF14] neon-text">در مستطیل سبز</span>
+</h1>
+<p class="max-w-xl text-lg leading-relaxed text-gray-400 md:text-xl">
+                        با دراپ‌بال دانش فوتبالی خود را در رقابت‌های زنده به رخ بکشید. جایزه ببرید، سطح خود را ارتقا دهید و در بزرگترین جامعه فوتبالی ایران پادشاهی کنید.
+                    </p>
+ <div class="flex w-full flex-wrap gap-5 pt-4">
+<button class="flex-1 sm:flex-none flex items-center justify-center gap-3 rounded-2xl bg-[#39FF14] px-10 py-5 text-lg font-black text-black neon-shadow transition-all hover:scale-105 active:scale-95" aria-label="شروع بازی دراپ‌بال">
+<span class="material-symbols-outlined text-2xl" aria-hidden="true">rocket_launch</span>
+                            همین حالا بازی کن
+                        </button>
+<button class="flex-1 sm:flex-none flex items-center justify-center gap-3 rounded-2xl bg-white/5 border border-white/10 px-10 py-5 text-lg font-black text-white backdrop-blur-md transition-all hover:bg-white/10" aria-label="مشاهده جدول رده‌بندی">
+                            مشاهده جدول رده‌بندی
+                        </button>
+</div>
+</div>
+ <div class="relative flex flex-1 justify-center items-center">
+<div class="absolute -z-10 h-[500px] w-[500px] rounded-full bg-[#39FF14]/5 blur-[120px]" aria-hidden="true"></div>
+ <div class="relative z-0 group">
+<div class="absolute -inset-1 bg-gradient-to-r from-[#39FF14] to-blue-500 rounded-3xl opacity-20 blur-xl group-hover:opacity-40 transition duration-1000" aria-hidden="true"></div>
+<div class="glass-card p-4 relative bg-black/40">
+<picture>
+<source srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuA4LlmuQZ__GLgSjHuUOn1KVF4D69LZjlg3lk60Xfi_8wdb5DJuSi4YfGiQ3vhizK0td9iL59hlwCwAORoIW5uDbngGPjGAIktTlkx7-vI8SvNlW6vcm0lz2FyapWzfXJdZUSCFVfn4ala-Feeu4uZEtQRRyq8-SIxe25iBGiiCBiKlo7IpWj_Gk0-iYgWo3K2dfsHgFlag5VVMfnRHZb9A3MEmoCkfZRzg1eWUe_zGtwHVzkpuCBWyTpq15ZV9CowsobBycaMyoEM" type="image/webp">
+<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4LlmuQZ__GLgSjHuUOn1KVF4D69LZjlg3lk60Xfi_8wdb5DJuSi4YfGiQ3vhizK0td9iL59hlwCwAORoIW5uDbngGPjGAIktTlkx7-vI8SvNlW6vcm0lz2FyapWzfXJdZUSCFVfn4ala-Feeu4uZEtQRRyq8-SIxe25iBGiiCBiKlo7IpWj_Gk0-iYgWo3K2dfsHgFlag5VVMfnRHZb9A3MEmoCkfZRzg1eWUe_zGtwHVzkpuCBWyTpq15ZV9CowsobBycaMyoEM" alt="اسکرین‌شات بازی دراپ‌بال" class="h-[450px] w-full max-w-[450px] rounded-2xl object-cover" loading="eager" decoding="async">
+</picture>
+</div>
+</div>
+</div>
+</div>
+ </div>
+ </div>
+ </section>
+<section class="py-20 relative bg-gradient-to-b from-transparent to-black/20" id="stats">
+<div class="mx-auto max-w-7xl px-6">
+<div class="glass-card p-8 md:p-16">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+<div class="fade-in-up" style="transition-delay: 0.1s;">
+<div class="counter-value" data-target="50000">۰</div>
+<p class="mt-3 text-gray-400 font-bold">کاربر فعال</p>
+</div>
+<div class="fade-in-up" style="transition-delay: 0.2s;">
+<div class="counter-value" data-target="1200000">۰</div>
+<p class="mt-3 text-gray-400 font-bold">سوال پاسخ شده</p>
+</div>
+<div class="fade-in-up" style="transition-delay: 0.3s;">
+<div class="counter-value" data-target="850">۰</div>
+<p class="mt-3 text-gray-400 font-bold">جایزه نقدی (میلیون تومان)</p>
+</div>
+<div class="fade-in-up" style="transition-delay: 0.4s;">
+<div class="counter-value" data-target="98">۰</div>
+<p class="mt-3 text-gray-400 font-bold">درصد رضایت</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+ <section class="py-24 relative" id="download">
+<div class="mx-auto max-w-7xl px-6">
+<div class="mb-20 text-center">
+<h2 class="text-4xl font-black text-white md:text-5xl">دریافت اپلیکیشن</h2>
+<p class="mt-4 text-gray-400 text-lg">روی تمامی پلتفرم‌ها، آماده شوت‌زنی باشید</p>
+</div>
+ <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+<div class="glass-card p-10 flex flex-col items-center text-center group hover:border-[#39FF14]/40 transition-all duration-500" role="article">
+<div class="mb-8 p-5 rounded-3xl bg-white/5 text-[#39FF14] group-hover:bg-[#39FF14]/10 transition-colors" aria-hidden="true">
+<span class="material-symbols-outlined text-5xl">robot_2</span>
+</div>
+<h3 class="text-2xl font-bold text-white">اندروید</h3>
+<p class="mt-3 text-gray-500 text-sm leading-relaxed">نسخه بهینه شده برای تمام گوشی‌های اندرویدی</p>
+<div class="mt-10 flex flex-col gap-3 w-full">
+<button class="w-full rounded-xl bg-white text-black py-4 font-black hover:bg-[#39FF14] transition-all" aria-label="دانلود از گوگل پلی">گوگل پلی</button>
+<button class="w-full rounded-xl bg-white/5 border border-white/10 py-4 font-bold text-white hover:bg-white/10 transition-all" aria-label="دانلود مستقیم APK">دانلود مستقیم APK</button>
+</div>
+</div>
+ <div class="glass-card p-10 flex flex-col items-center text-center border-[#39FF14]/30 relative overflow-hidden group" role="article">
+<div class="absolute top-0 right-0 bg-[#39FF14] text-black px-4 py-1 text-[10px] font-black rounded-bl-xl uppercase tracking-tighter" aria-hidden="true">پیشنهادی</div>
+<div class="mb-8 p-5 rounded-3xl bg-[#39FF14]/10 text-[#39FF14] neon-shadow" aria-hidden="true">
+<span class="material-symbols-outlined text-5xl">language</span>
+</div>
+<h3 class="text-2xl font-bold text-white">نسخه وب (PWA)</h3>
+<p class="mt-3 text-gray-500 text-sm leading-relaxed">بدون نیاز به نصب، از هر کجا وارد بازی شوید</p>
+<div class="mt-10 w-full">
+<button class="w-full rounded-xl bg-[#39FF14] text-black py-5 font-black neon-shadow hover:scale-105 transition-all" aria-label="شروع فوری بازی در مرورگر">شروع فوری بازی</button>
+</div>
+</div>
+ <div class="glass-card p-10 flex flex-col items-center text-center group hover:border-[#39FF14]/40 transition-all duration-500" role="article">
+<div class="mb-8 p-5 rounded-3xl bg-white/5 text-gray-300 group-hover:bg-white/10 transition-colors" aria-hidden="true">
+<span class="material-symbols-outlined text-5xl">ios</span>
+</div>
+<h3 class="text-2xl font-bold text-white">آیفون (iOS)</h3>
+<p class="mt-3 text-gray-500 text-sm leading-relaxed">راهنمای نصب نسخه تحت وب برای کاربران اپل</p>
+<div class="mt-10 w-full">
+<button class="w-full rounded-xl bg-white/5 border border-white/10 py-4 font-bold text-white hover:bg-white/10 transition-all" aria-label="مشاهده آموزش افزودن به صفحه اصلی">آموزش افزودن به Home</button>
+</div>
+</div>
+ </div>
+ </div>
+ </section>
+ <section class="py-20 relative" id="testimonials">
+<div class="mx-auto max-w-7xl px-6">
+<div class="text-center mb-16 fade-in-up">
+<h2 class="text-4xl md:text-5xl font-black text-white mb-4">چه کسانی دراپ‌بال را دوست دارند؟</h2>
+<p class="text-gray-400 text-lg">نظرات برندگان و کاربران فعال ما</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="glass-card p-8 fade-in-up" style="transition-delay: 0.1s;">
+<div class="flex items-center gap-4 mb-6">
+<div class="h-12 w-12 rounded-full bg-gradient-to-br from-[#39FF14] to-green-500 flex items-center justify-center text-black font-black text-lg">م</div>
+<div>
+<p class="font-black text-white">محمد رضایی</p>
+<p class="text-sm text-gray-400">لیگ برتر</p>
+</div>
+</div>
+<div class="flex gap-1 mb-4">
+<span class="material-symbols-outlined text-[#39FF14] text-sm">star</span>
+<span class="material-symbols-outlined text-[#39FF14] text-sm">star</span>
+<span class="material-symbols-outlined text-[#39FF14] text-sm">star</span>
+<span class="material-symbols-outlined text-[#39FF14] text-sm">star</span>
+<span class="material-symbols-outlined text-[#39FF14] text-sm">star</span>
+</div>
+<p class="text-gray-300 leading-relaxed">"هفته گذشته ۵۰۰ هزار تومان بردم! دراپ‌بال بهترین کوییز فوتبالیه که تا حالا دیدم."</p>
+</div>
+<div class="glass-card p-8 fade-in-up" style="transition-delay: 0.2s;">
+<div class="flex items-center gap-4 mb-6">
+<div class="h-12 w-12 rounded-full bg-gradient-to-br from-[#39FF14] to-green-500 flex items-center justify-center text-black font-black text-lg">س</div>
+<div>
+<p class="font-black text-white">سارا احمدی</p>
+<p class="text-sm text-gray-400">لیگ نقره</p>
+</div>
+</div>
+<div class="flex gap-1 mb-4">
+<span class="material-symbols-outlined text-[#39FF14] text-sm">star</span>
+<span class="material-symbols-outlined text-[#39FF14] text-sm">star</span>
+<span class="material-symbols-outlined text-[#39FF14] text-sm">star</span>
+<span class="material-symbols-outlined text-[#39FF14] text-sm">star</span>
+<span class="material-symbols-outlined text-[#39FF14] text-sm">star</span>
+</div>
+<p class="text-gray-300 leading-relaxed">"همراه با دوستام رقابت می‌کنیم و هیجان داریم. سوالات خیلی جالبه و به‌روز!"</p>
+</div>
+<div class="glass-card p-8 fade-in-up" style="transition-delay: 0.3s;">
+<div class="flex items-center gap-4 mb-6">
+<div class="h-12 w-12 rounded-full bg-gradient-to-br from-[#39FF14] to-green-500 flex items-center justify-center text-black font-black text-lg">ع</div>
+<div>
+<p class="font-black text-white">علی محمدی</p>
+<p class="text-sm text-gray-400">لیگ طلا</p>
+</div>
+</div>
+<div class="flex gap-1 mb-4">
+<span class="material-symbols-outlined text-[#39FF14] text-sm">star</span>
+<span class="material-symbols-outlined text-[#39FF14] text-sm">star</span>
+<span class="material-symbols-outlined text-[#39FF14] text-sm">star</span>
+<span class="material-symbols-outlined text-[#39FF14] text-sm">star</span>
+<span class="material-symbols-outlined text-gray-600 text-sm">star</span>
+</div>
+<p class="text-gray-300 leading-relaxed">"سیستم سطح‌بندی فوق‌العاده‌ست. همیشه با هم‌سطح‌های خودم رقابت می‌کنم."</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 relative" id="demo">
+<div class="mx-auto max-w-7xl px-6">
+<div class="text-center mb-12 fade-in-up">
+<h2 class="text-4xl md:text-5xl font-black text-white mb-4">دراپ‌بال رو ببین</h2>
+<p class="text-gray-400 text-lg">ویدیوی معرفی بازی رو تماشا کنید و با محیط آشنا شوید</p>
+</div>
+<div class="glass-card p-4 scale-in max-w-4xl mx-auto">
+<div class="relative aspect-video rounded-2xl overflow-hidden bg-black">
+<div class="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-[#39FF14]/10 to-blue-500/10">
+<button class="group flex h-20 w-20 items-center justify-center rounded-full bg-[#39FF14] neon-shadow pulse-animation transition-all hover:scale-110">
+<span class="material-symbols-outlined text-4xl text-black mr-[-4px]">play_arrow</span>
+</button>
+</div>
+<div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+<p class="text-white font-black text-lg">معرفی دراپ‌بال</p>
+<p class="text-gray-400 text-sm">۲ دقیقه</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+ <section class="py-24" id="features">
+<div class="mx-auto max-w-7xl px-6">
+<div class="glass-card p-8 md:p-16 overflow-hidden relative">
+<div class="absolute -top-24 -left-24 w-64 h-64 bg-[#39FF14]/10 blur-[100px]"></div>
+<div class="flex flex-col gap-16 lg:flex-row items-center">
+<div class="flex-1 space-y-10 text-right">
+<h2 class="text-4xl font-black text-white leading-tight">تکنولوژی در خدمت<br/><span class="text-[#39FF14]">سرگرمی فوتبالی</span></h2>
+<div class="grid gap-8">
+<div class="flex items-start gap-5 group">
+<div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-white/5 border border-white/10 text-[#39FF14] group-hover:bg-[#39FF14] group-hover:text-black transition-all duration-300">
+<span class="material-symbols-outlined text-3xl">emoji_events</span>
+</div>
+<div>
+<h4 class="text-xl font-bold text-white mb-2">لیگ‌های هوشمند</h4>
+<p class="text-gray-400 leading-relaxed">سیستم سطح‌بندی پیشرفته برای رقابت با هم‌سطح‌های خودتان در سراسر کشور.</p>
+</div>
+</div>
+<div class="flex items-start gap-5 group">
+<div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-white/5 border border-white/10 text-[#39FF14] group-hover:bg-[#39FF14] group-hover:text-black transition-all duration-300">
+<span class="material-symbols-outlined text-3xl">account_balance_wallet</span>
+</div>
+<div>
+<h4 class="text-xl font-bold text-white mb-2">جوایز آنی و نقدی</h4>
+<p class="text-gray-400 leading-relaxed">برندگان هر هفته، پاداش‌های خود را در کمترین زمان ممکن دریافت می‌کنند.</p>
+</div>
+</div>
+<div class="flex items-start gap-5 group">
+<div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-white/5 border border-white/10 text-[#39FF14] group-hover:bg-[#39FF14] group-hover:text-black transition-all duration-300">
+<span class="material-symbols-outlined text-3xl">query_stats</span>
+</div>
+<div>
+<h4 class="text-xl font-bold text-white mb-2">آمار و تحلیل دقیق</h4>
+<p class="text-gray-400 leading-relaxed">نمودارهای پیشرفت و آنالیز نقاط قوت و ضعف دانش فوتبالی شما.</p>
+</div>
+</div>
+</div>
+</div>
+ <div class="flex-1 relative">
+<div class="relative mx-auto max-w-[320px]">
+<div class="absolute -inset-10 bg-[#39FF14]/20 blur-[80px] rounded-full" aria-hidden="true"></div>
+<div class="relative overflow-hidden rounded-[2.5rem] border-[10px] border-white/5 shadow-2xl">
+<picture>
+<source srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuAYAw_3VxJrkUEY9YeACwR-5Y6bsSV-7p-uV_hpHjO-H1Y_f7gUVgGvyGG8nGrGwCpAIDdlot6p0t8yDU475uKHIADyThpWdOtojM6CVsaTIaw5wVjKvjOLTj12huK1uX9EsDaRFasKawNAfp_07o-vYzoO7Iq_wgHEAXdBMDE9318xYDQPTr8AYSqDbWMGq-BoszbUeP18t08b9tY0IbvUYrkL5uAi0sWTveSLPbphHUpzWOe0p29wJvtOP8_kjJ2hVmNVWtFLXsE 1x, https://lh3.googleusercontent.com/aida-public/AB6AXuAYAw_3VxJrkUEY9YeACwR-5Y6bsSV-7p-uV_hpHjO-H1Y_f7gUVgGvyGG8nGrGwCpAIDdlot6p0t8yDU475uKHIADyThpWdOtojM6CVsaTIaw5wVjKvjOLTj12huK1uX9EsDaRFasKawNAfp_07o-vYzoO7Iq_wgHEAXdBMDE9318xYDQPTr8AYSqDbWMGq-BoszbUeP18t08b9tY0IbvUYrkL5uAi0sWTveSLPbphHUpzWOe0p29wJvtOP8_kjJ2hVmNVWtFLXsE 2x" type="image/webp">
+<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYAw_3VxJrkUEY9YeACwR-5Y6bsSV-7p-uV_hpHjO-H1Y_f7gUVgGvyGG8nGrGwCpAIDdlot6p0t8yDU475uKHIADyThpWdOtojM6CVsaTIaw5wVjKvjOLTj12huK1uX9EsDaRFasKawNAfp_07o-vYzoO7Iq_wgHEAXdBMDE9318xYDQPTr8AYSqDbWMGq-BoszbUeP18t08b9tY0IbvUYrkL5uAi0sWTveSLPbphHUpzWOe0p29wJvtOP8_kjJ2hVmNVWtFLXsE" alt="تصویر گوشی موبایل نمایش محیط بازی دراپ‌بال" class="aspect-[9/19] w-full object-cover" loading="lazy" decoding="async" width="320" height="675">
+</picture>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+ </div>
+ </div>
+ </section>
+<section class="py-20 relative" id="faq">
+<div class="mx-auto max-w-4xl px-6">
+<div class="text-center mb-16 fade-in-up">
+<h2 class="text-4xl md:text-5xl font-black text-white mb-4">سوالات متداول</h2>
+<p class="text-gray-400 text-lg">پاسخ به سوالات رایج کاربران</p>
+</div>
+<div class="space-y-4">
+<div class="glass-card fade-in-up" style="transition-delay: 0.1s;">
+<button class="accordion-btn w-full flex items-center justify-between p-6 text-right" aria-expanded="false">
+<span class="font-black text-white text-lg">دراپ‌بال چطور کار می‌کند؟</span>
+<span class="material-symbols-outlined text-[#39FF14] text-2xl transition-transform duration-300">expand_more</span>
+</button>
+<div class="accordion-content">
+<div class="px-6 pb-6 text-gray-400 leading-relaxed">
+دراپ‌بال یک بازی کوییز فوتبالی زنده است. در هر مسابقه، سوالات فوتبالی در مورد بازی‌های لحظه‌ای نمایش داده می‌شود و باید سریع‌تر از رقبا پاسخ دهید. هر پاسخ درست امتیاز می‌آورد و در پایان جدول رده‌بندی مشخص می‌شود.
+</div>
+</div>
+</div>
+<div class="glass-card fade-in-up" style="transition-delay: 0.2s;">
+<button class="accordion-btn w-full flex items-center justify-between p-6 text-right" aria-expanded="false">
+<span class="font-black text-white text-lg">چطور می‌توانم جایزه ببرم؟</span>
+<span class="material-symbols-outlined text-[#39FF14] text-2xl transition-transform duration-300">expand_more</span>
+</button>
+<div class="accordion-content">
+<div class="px-6 pb-6 text-gray-400 leading-relaxed">
+با شرکت در لیگ‌ها و کسب امتیاز در مسابقات، جایزه‌های نقدی هفتگی و ماهانه دریافت کنید. هر چه امتیاز بیشتری کسب کنید، جایزه‌های بزرگتری می‌برید. جایزه‌ها از طریق ولت دراپ‌بال قابل برداشت هستند.
+</div>
+</div>
+</div>
+<div class="glass-card fade-in-up" style="transition-delay: 0.3s;">
+<button class="accordion-btn w-full flex items-center justify-between p-6 text-right" aria-expanded="false">
+<span class="font-black text-white text-lg">آیا برای شروع باید هزینه کنم؟</span>
+<span class="material-symbols-outlined text-[#39FF14] text-2xl transition-transform duration-300">expand_more</span>
+</button>
+<div class="accordion-content">
+<div class="px-6 pb-6 text-gray-400 leading-relaxed">
+خیر! دراپ‌بال کاملاً رایگان است. می‌توانید بدون هزینه ثبت‌نام کنید و در لیگ‌های رایگان شرکت کنید. برای شرکت در لیگ‌های برتر و جوایز بزرگتر، می‌توانید پکیج‌های ویژه تهیه کنید.
+</div>
+</div>
+</div>
+<div class="glass-card fade-in-up" style="transition-delay: 0.4s;">
+<button class="accordion-btn w-full flex items-center justify-between p-6 text-right" aria-expanded="false">
+<span class="font-black text-white text-lg">چطور سطح من مشخص می‌شود؟</span>
+<span class="material-symbols-outlined text-[#39FF14] text-2xl transition-transform duration-300">expand_more</span>
+</button>
+<div class="accordion-content">
+<div class="px-6 pb-6 text-gray-400 leading-relaxed">
+سیستم هوشمند دراپ‌الب بر اساس عملکرد شما در مسابقات قبلی، سطح شما را تعیین می‌کند. این کار باعث می‌شود همیشه با بازیکنان هم‌سطح خود رقابت کنید و تجربه منصفانه‌ای داشته باشید.
+</div>
+</div>
+</div>
+<div class="glass-card fade-in-up" style="transition-delay: 0.5s;">
+<button class="accordion-btn w-full flex items-center justify-between p-6 text-right" aria-expanded="false">
+<span class="font-black text-white text-lg">آیا می‌توانم با دوستانم بازی کنم؟</span>
+<span class="material-symbols-outlined text-[#39FF14] text-2xl transition-transform duration-300">expand_more</span>
+</button>
+<div class="accordion-content">
+<div class="px-6 pb-6 text-gray-400 leading-relaxed">
+بله! می‌توانید دوستان خود را به دراپ‌بال دعوت کنید و در یک تیم با هم بازی کنید. همچنین می‌توانید با هم در لیگ‌ها رقابت کنید و در جدول رده‌بندی دوستان مقام بگیرید.
+</div>
+</div>
+</div>
+ </div>
+ </div>
+ </section>
+<section class="py-20 relative" id="newsletter">
+<div class="mx-auto max-w-4xl px-6">
+<div class="glass-card p-8 md:p-16 text-center fade-in-up">
+<div class="flex justify-center mb-6">
+<div class="h-16 w-16 rounded-2xl bg-[#39FF14]/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl text-[#39FF14]">mail</span>
+</div>
+</div>
+<h2 class="text-4xl md:text-5xl font-black text-white mb-4">اولین نفر باشید!</h2>
+<p class="text-gray-400 text-lg mb-8 max-w-xl mx-auto">عضویت در خبرنامه تا از آخرین اخبار، لیگ‌های جدید و جوایز ویژه باخبر شوید.</p>
+<form class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto" novalidate>
+<input type="email" placeholder="ایمیل خود را وارد کنید" required class="flex-1 rounded-2xl bg-white/5 border border-white/10 px-6 py-4 text-white placeholder-gray-500 focus:outline-none focus:border-[#39FF14] focus:ring-2 focus:ring-[#39FF14]/20 transition-all" aria-label="ایمیل"/>
+<button type="submit" class="rounded-2xl bg-[#39FF14] px-8 py-4 font-black text-black neon-shadow hover:scale-105 transition-all whitespace-nowrap">عضویت رایگان</button>
+</form>
+<p class="mt-4 text-gray-500 text-sm">ایمیل شما محرمانه می‌ماند و هر زمان بخواهید می‌توانید لغو کنید.</p>
+</div>
+</div>
+</section>
+ <footer class="mt-20 border-t border-white/5 bg-black/30 backdrop-blur-3xl pt-20 pb-10">
+<div class="mx-auto max-w-7xl px-6">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1 md:col-span-2 space-y-6">
+<div class="flex items-center gap-3">
+<div class="flex h-10 w-10 items-center justify-center rounded-xl bg-[#39FF14] text-black">
+<span class="material-symbols-outlined text-2xl font-bold">sports_soccer</span>
+</div>
+<h2 class="text-2xl font-black text-white">دراپ‌بال</h2>
+</div>
+<p class="text-gray-400 max-w-md leading-relaxed">
+                            پایگاهی برای تمام خوره‌های فوتبال. جایی که دانش شما تبدیل به اعتبار و جایزه می‌شود. همراه ما در شبکه‌های اجتماعی باشید.
+                        </p>
+<div class="flex gap-4">
+<a class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:bg-[#39FF14] hover:text-black transition-all text-gray-400" href="#">
+<svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+<a class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:bg-[#39FF14] hover:text-black transition-all text-gray-400" href="#">
+<span class="material-symbols-outlined">send</span>
+</a>
+<a class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:bg-[#39FF14] hover:text-black transition-all text-gray-400" href="#">
+<span class="material-symbols-outlined text-2xl">alternate_email</span>
+</a>
+</div>
+</div>
+<div class="space-y-6">
+<h4 class="text-white font-bold text-lg">محصول</h4>
+<ul class="space-y-4 text-gray-400 text-sm">
+<li><a class="hover:text-[#39FF14]" href="#">امکانات جدید</a></li>
+<li><a class="hover:text-[#39FF14]" href="#">لیگ‌های برتر</a></li>
+<li><a class="hover:text-[#39FF14]" href="#">جوایز ماهانه</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="text-white font-bold text-lg">پشتیبانی</h4>
+<ul class="space-y-4 text-gray-400 text-sm">
+<li><a class="hover:text-[#39FF14]" href="#">سوالات متداول</a></li>
+<li><a class="hover:text-[#39FF14]" href="#">قوانین و مقررات</a></li>
+<li><a class="hover:text-[#39FF14]" href="#">تماس با ما</a></li>
+</ul>
+</div>
+</div>
+<div class="flex flex-col md:flex-row items-center justify-between border-t border-white/5 pt-10 text-xs text-gray-500 font-medium">
+<p>© ۱۴۰۳ تمامی حقوق برای دراپ‌بال محفوظ است.</p>
+<div class="flex gap-8 mt-4 md:mt-0">
+<a class="hover:text-white" href="#">حریم خصوصی</a>
+<a class="hover:text-white" href="#">شرایط استفاده</a>
+</div>
+</div>
+</div>
+</footer>
+  </div>
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-in-up, .fade-in-right, .fade-in-left, .scale-in').forEach(el => {
+        observer.observe(el);
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
+    if ('IntersectionObserver' in window) {
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.classList.add('loaded');
+                    observer.unobserve(img);
+                }
+            });
+        }, { rootMargin: '50px 0px', threshold: 0.01 });
+
+        document.querySelectorAll('img[loading="lazy"]').forEach(img => {
+            imageObserver.observe(img);
+        });
+    }
+
+    const counters = document.querySelectorAll('.counter-value');
+    const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const target = parseInt(entry.target.getAttribute('data-target'));
+                animateCounter(entry.target, target);
+                counterObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    counters.forEach(counter => counterObserver.observe(counter));
+
+    function animateCounter(element, target) {
+        let current = 0;
+        const increment = target / 50;
+        const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+                element.textContent = target.toLocaleString('fa-IR');
+                clearInterval(timer);
+            } else {
+                element.textContent = Math.floor(current).toLocaleString('fa-IR');
+            }
+        }, 30);
+    }
+
+    document.querySelectorAll('.accordion-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            const content = button.nextElementSibling;
+            const isOpen = content.classList.contains('open');
+
+            document.querySelectorAll('.accordion-content').forEach(c => c.classList.remove('open'));
+            document.querySelectorAll('.accordion-btn').forEach(b => b.setAttribute('aria-expanded', 'false'));
+
+            if (!isOpen) {
+                content.classList.add('open');
+                button.setAttribute('aria-expanded', 'true');
+            }
+        });
+    });
+
+    const forms = document.querySelectorAll('form');
+    forms.forEach(form => {
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const button = form.querySelector('button[type="submit"]');
+            const originalText = button.textContent;
+            button.textContent = 'در حال ارسال...';
+            button.disabled = true;
+
+            setTimeout(() => {
+                button.textContent = 'با موفقیت ارسال شد!';
+                button.classList.add('bg-green-500');
+                setTimeout(() => {
+                    button.textContent = originalText;
+                    button.disabled = false;
+                    button.classList.remove('bg-green-500');
+                    form.reset();
+                }, 2000);
+            }, 1500);
+        });
+    });
+
+    document.querySelectorAll('img').forEach(img => {
+        img.addEventListener('error', function() {
+            this.onerror = null;
+            this.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="300"%3E%3Crect fill="%23050B18" width="400" height="300"/%3E%3Ctext fill="%23999" font-family="sans-serif" font-size="14" x="50%25" y="50%25" text-anchor="middle" dominant-baseline="middle"%3Eتصویر یافت نشد%3C/text%3E%3C/svg%3E';
+            this.alt = 'تصویر در دسترس نیست';
+        });
+    });
+
+    window.addEventListener('online', () => {
+        showNotification('اتصال اینترنت برقرار شد', 'success');
+    });
+
+    window.addEventListener('offline', () => {
+        showNotification('اتصال اینترنت قطع شد', 'warning');
+    });
+
+    function showNotification(message, type = 'info') {
+        const notification = document.createElement('div');
+        notification.className = `fixed bottom-4 left-4 z-[100] px-6 py-4 rounded-2xl glass-card text-white font-bold text-sm flex items-center gap-3 transform translate-y-full transition-all duration-300`;
+
+        const icon = type === 'success' ? 'check_circle' : type === 'warning' ? 'wifi_off' : 'info';
+        const color = type === 'success' ? 'text-[#39FF14]' : type === 'warning' ? 'text-yellow-400' : 'text-blue-400';
+
+        notification.innerHTML = `
+            <span class="material-symbols-outlined ${color}">${icon}</span>
+            <span>${message}</span>
+        `;
+
+        document.body.appendChild(notification);
+
+        setTimeout(() => {
+            notification.style.transform = 'translateY(0)';
+        }, 100);
+
+        setTimeout(() => {
+            notification.style.transform = 'translateY(100%)';
+            setTimeout(() => notification.remove(), 300);
+        }, 4000);
+    }
+});
+
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        const preloader = document.getElementById('preloader');
+        if (preloader) {
+            preloader.style.opacity = '0';
+            preloader.style.transition = 'opacity 0.5s ease-out';
+            setTimeout(() => {
+                preloader.style.display = 'none';
+            }, 500);
+        }
+    }, 1000);
+
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js')
+          .then((registration) => {
+            console.log('Service Worker ثبت شد:', registration.scope);
+          })
+          .catch((error) => {
+            console.log('ثبت Service Worker ناموفق بود:', error);
+          });
+    }
+});
+</script>
+  </body></html>

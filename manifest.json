@@ -1,0 +1,53 @@
+{
+  "name": "دراپ‌بال - بازی کوییز فوتبالی",
+  "short_name": "دراپ‌بال",
+  "description": "دراپ‌بال - بازی کوییز فوتبالی زنده. دانش فوتبالی خود را به رخ بکشید، جایزه ببرید.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050B18",
+  "theme_color": "#39FF14",
+  "orientation": "portrait-primary",
+  "dir": "rtl",
+  "lang": "fa",
+  "icons": [
+    {
+      "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuA4LlmuQZ__GLgSjHuUOn1KVF4D69LZjlg3lk60Xfi_8wdb5DJuSi4YfGiQ3vhizK0td9iL59hlwCwAORoIW5uDbngGPjGAIktTlkx7-vI8SvNlW6vcm0lz2FyapWzfXJdZUSCFVfn4ala-Feeu4uZEtQRRyq8-SIxe25iBGiiCBiKlo7IpWj_Gk0-iYgWo3K2dfsHgFlag5VVMfnRHZb9A3MEmoCkfZRzg1eWUe_zGtwHVzkpuCBWyTpq15ZV9CowsobBycaMyoEM",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuA4LlmuQZ__GLgSjHuUOn1KVF4D69LZjlg3lk60Xfi_8wdb5DJuSi4YfGiQ3vhizK0td9iL59hlwCwAORoIW5uDbngGPjGAIktTlkx7-vI8SvNlW6vcm0lz2FyapWzfXJdZUSCFVfn4ala-Feeu4uZEtQRRyq8-SIxe25iBGiiCBiKlo7IpWj_Gk0-iYgWo3K2dfsHgFlag5VVMfnRHZb9A3MEmoCkfZRzg1eWUe_zGtwHVzkpuCBWyTpq15ZV9CowsobBycaMyoEM",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuA4LlmuQZ__GLgSjHuUOn1KVF4D69LZjlg3lk60Xfi_8wdb5DJuSi4YfGiQ3vhizK0td9iL59hlwCwAORoIW5uDbngGPjGAIktTlkx7-vI8SvNlW6vcm0lz2FyapWzfXJdZUSCFVfn4ala-Feeu4uZEtQRRyq8-SIxe25iBGiiCBiKlo7IpWj_Gk0-iYgWo3K2dfsHgFlag5VVMfnRHZb9A3MEmoCkfZRzg1eWUe_zGtwHVzkpuCBWyTpq15ZV9CowsobBycaMyoEM",
+      "sizes": "384x384",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["games", "sports", "entertainment"],
+  "shortcuts": [
+    {
+      "name": "شروع بازی",
+      "short_name": "شروع",
+      "description": "شروع بازی دراپ‌بال",
+      "url": "/?action=play",
+      "icons": [
+        {
+          "src": "https://fonts.gstatic.com/si/materialsymbolsoutlined/latest/play_arrow/vf/gw-200px.svg",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuA4LlmuQZ__GLgSjHuUOn1KVF4D69LZjlg3lk60Xfi_8wdb5DJuSi4YfGiQ3vhizK0td9iL59hlwCwAORoIW5uDbngGPjGAIktTlkx7-vI8SvNlW6vcm0lz2FyapWzfXJdZUSCFVfn4ala-Feeu4uZEtQRRyq8-SIxe25iBGiiCBiKlo7IpWj_Gk0-iYgWo3K2dfsHgFlag5VVMfnRHZb9A3MEmoCkfZRzg1eWUe_zGtwHVzkpuCBWyTpq15ZV9CowsobBycaMyoEM",
+      "sizes": "540x720",
+      "type": "image/jpeg",
+      "label": "صفحه اصلی بازی"
+    }
+  ]
+}
