@@ -1,7 +1,7 @@
 const CACHE_NAME = 'dropball-v1';
 const urlsToCache = [
   '/',
-  '/code.html',
+  '/index.html',
   '/manifest.json',
   'https://cdn.tailwindcss.com',
   'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap',
