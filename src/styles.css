@@ -19,9 +19,11 @@ body {
     background-color: var(--bg-deep);
     color: white;
     overflow-x: hidden;
+    position: relative;
+    max-width: 100%;
     line-height: 1.7;
 }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
 
 /* Mesh background */
 .bg-mesh {
