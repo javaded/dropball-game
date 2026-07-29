@@ -92,6 +92,14 @@
 <link rel="stylesheet" href="styles.css">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<!-- Google Analytics 4 — replace BOTH G-XXXXXXXXXX with your GA4 Measurement ID -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX', { 'anonymize_ip': true });
+</script>
 </head>
 <body class="bg-mesh min-h-screen">
 
@@ -148,7 +156,7 @@
             <a class="text-sm font-bold text-white/70 hover:text-white link-underline transition-colors" href="#faq">سوالات</a>
         </div>
         <div class="flex items-center gap-3">
-            <a href="https://webapp.dropball-game.ir/" class="hidden sm:inline-flex items-center gap-2 rounded-2xl btn-primary px-6 py-3 text-sm">
+            <a href="#download" class="hidden sm:inline-flex items-center gap-2 rounded-2xl btn-primary px-6 py-3 text-sm">
                 <span class="material-symbols-outlined text-xl">play_arrow</span>
                 بازی کن
             </a>
@@ -164,7 +172,7 @@
             <a class="py-3 text-base font-bold text-white/80 hover:text-[#1ED760]" href="#showcase">نگاهی به بازی</a>
             <a class="py-3 text-base font-bold text-white/80 hover:text-[#1ED760]" href="#features">امکانات</a>
             <a class="py-3 text-base font-bold text-white/80 hover:text-[#1ED760]" href="#faq">سوالات</a>
-            <a href="https://webapp.dropball-game.ir/" class="mt-2 inline-flex items-center justify-center gap-2 rounded-2xl btn-primary px-6 py-4">
+            <a href="#download" class="mt-2 inline-flex items-center justify-center gap-2 rounded-2xl btn-primary px-6 py-4">
                 <span class="material-symbols-outlined text-xl">play_arrow</span> شروع بازی
             </a>
         </div>
@@ -193,8 +201,8 @@
             </p>
 
             <div class="flex w-full flex-col sm:flex-row gap-4 pt-2">
-                <a href="https://webapp.dropball-game.ir/" class="flex-1 sm:flex-none">
-                    <button class="w-full flex items-center justify-center gap-3 rounded-2xl btn-primary px-8 py-5 text-lg" aria-label="شروع بازی در مرورگر">
+                <a href="#download" class="flex-1 sm:flex-none">
+                    <button class="w-full flex items-center justify-center gap-3 rounded-2xl btn-primary px-8 py-5 text-lg" aria-label="دانلود و شروع بازی دراپ‌بال">
                         <span class="material-symbols-outlined text-2xl" aria-hidden="true">bolt</span>
                         همین الان بازی کن
                     </button>
@@ -371,21 +379,21 @@
 
         <div class="marquee gap-6 px-3">
             <!-- Set A -->
-            <div class="phone-frame w-56 sm:w-64 shrink-0"><img src="images/com.soccerquiz.soccer_quiz_flutter-240297237283.jpg" alt="محیط بازی دراپ‌بال" class="w-full h-auto" loading="lazy" decoding="async"></div>
-            <div class="phone-frame w-56 sm:w-64 shrink-0"><img src="images/com.soccerquiz.soccer_quiz_flutter-301288015998.jpg" alt="سوالات دراپ‌بال" class="w-full h-auto" loading="lazy" decoding="async"></div>
-            <div class="phone-frame w-56 sm:w-64 shrink-0"><img src="images/com.soccerquiz.soccer_quiz_flutter-341845480733.jpg" alt="لیدربورد دراپ‌بال" class="w-full h-auto" loading="lazy" decoding="async"></div>
-            <div class="phone-frame w-56 sm:w-64 shrink-0"><img src="images/com.soccerquiz.soccer_quiz_flutter-653654885082.jpg" alt="پروفایل کاربری دراپ‌بال" class="w-full h-auto" loading="lazy" decoding="async"></div>
-            <div class="phone-frame w-56 sm:w-64 shrink-0"><img src="images/com.soccerquiz.soccer_quiz_flutter-935882837552.jpg" alt="مسابقات دراپ‌بال" class="w-full h-auto" loading="lazy" decoding="async"></div>
-            <div class="phone-frame w-56 sm:w-64 shrink-0"><img src="images/com.soccerquiz.soccer_quiz_flutter-938153259447.jpg" alt="لیگ‌ها در دراپ‌بال" class="w-full h-auto" loading="lazy" decoding="async"></div>
-            <div class="phone-frame w-56 sm:w-64 shrink-0"><img src="images/com.soccerquiz.soccer_quiz_flutter-988824918185.jpg" alt="آمار کاربر دراپ‌بال" class="w-full h-auto" loading="lazy" decoding="async"></div>
-            <!-- Set B (duplicate for seamless loop) -->
-            <div class="phone-frame w-56 sm:w-64 shrink-0"><img src="images/com.soccerquiz.soccer_quiz_flutter-240297237283.jpg" alt="محیط بازی دراپ‌بال" class="w-full h-auto" loading="lazy" decoding="async"></div>
-            <div class="phone-frame w-56 sm:w-64 shrink-0"><img src="images/com.soccerquiz.soccer_quiz_flutter-301288015998.jpg" alt="سوالات دراپ‌بال" class="w-full h-auto" loading="lazy" decoding="async"></div>
-            <div class="phone-frame w-56 sm:w-64 shrink-0"><img src="images/com.soccerquiz.soccer_quiz_flutter-341845480733.jpg" alt="لیدربورد دراپ‌بال" class="w-full h-auto" loading="lazy" decoding="async"></div>
-            <div class="phone-frame w-56 sm:w-64 shrink-0"><img src="images/com.soccerquiz.soccer_quiz_flutter-653654885082.jpg" alt="پروفایل کاربری دراپ‌بال" class="w-full h-auto" loading="lazy" decoding="async"></div>
-            <div class="phone-frame w-56 sm:w-64 shrink-0"><img src="images/com.soccerquiz.soccer_quiz_flutter-935882837552.jpg" alt="مسابقات دراپ‌بال" class="w-full h-auto" loading="lazy" decoding="async"></div>
-            <div class="phone-frame w-56 sm:w-64 shrink-0"><img src="images/com.soccerquiz.soccer_quiz_flutter-938153259447.jpg" alt="لیگ‌ها در دراپ‌بال" class="w-full h-auto" loading="lazy" decoding="async"></div>
-            <div class="phone-frame w-56 sm:w-64 shrink-0"><img src="images/com.soccerquiz.soccer_quiz_flutter-988824918185.jpg" alt="آمار کاربر دراپ‌بال" class="w-full h-auto" loading="lazy" decoding="async"></div>
+            <div class="phone-frame w-56 sm:w-64 shrink-0"><img src="images/com.soccerquiz.soccer_quiz_flutter-240297237283.jpg" alt="نمونه‌ای از محیط بازی کوییز فوتبال دراپ‌بال" class="w-full h-auto" loading="lazy" decoding="async"></div>
+            <div class="phone-frame w-56 sm:w-64 shrink-0"><img src="images/com.soccerquiz.soccer_quiz_flutter-301288015998.jpg" alt="نمونه سوالات فوتبالی بازی دراپ‌بال" class="w-full h-auto" loading="lazy" decoding="async"></div>
+            <div class="phone-frame w-56 sm:w-64 shrink-0"><img src="images/com.soccerquiz.soccer_quiz_flutter-341845480733.jpg" alt="جدول رده‌بندی و لیدربورد دراپ‌بال" class="w-full h-auto" loading="lazy" decoding="async"></div>
+            <div class="phone-frame w-56 sm:w-64 shrink-0"><img src="images/com.soccerquiz.soccer_quiz_flutter-653654885082.jpg" alt="صفحه پروفایل کاربری در بازی دراپ‌بال" class="w-full h-auto" loading="lazy" decoding="async"></div>
+            <div class="phone-frame w-56 sm:w-64 shrink-0"><img src="images/com.soccerquiz.soccer_quiz_flutter-935882837552.jpg" alt="مسابقات و چالش‌های فوتبالی دراپ‌بال" class="w-full h-auto" loading="lazy" decoding="async"></div>
+            <div class="phone-frame w-56 sm:w-64 shrink-0"><img src="images/com.soccerquiz.soccer_quiz_flutter-938153259447.jpg" alt="لیگ‌های فوتبال در بازی دراپ‌بال" class="w-full h-auto" loading="lazy" decoding="async"></div>
+            <div class="phone-frame w-56 sm:w-64 shrink-0"><img src="images/com.soccerquiz.soccer_quiz_flutter-988824918185.jpg" alt="صفحه آمار و پیشرفت کاربر در دراپ‌بال" class="w-full h-auto" loading="lazy" decoding="async"></div>
+            <!-- Set B (duplicate for seamless loop — decorative) -->
+            <div class="phone-frame w-56 sm:w-64 shrink-0" aria-hidden="true"><img src="images/com.soccerquiz.soccer_quiz_flutter-240297237283.jpg" alt="" class="w-full h-auto" loading="lazy" decoding="async"></div>
+            <div class="phone-frame w-56 sm:w-64 shrink-0" aria-hidden="true"><img src="images/com.soccerquiz.soccer_quiz_flutter-301288015998.jpg" alt="" class="w-full h-auto" loading="lazy" decoding="async"></div>
+            <div class="phone-frame w-56 sm:w-64 shrink-0" aria-hidden="true"><img src="images/com.soccerquiz.soccer_quiz_flutter-341845480733.jpg" alt="" class="w-full h-auto" loading="lazy" decoding="async"></div>
+            <div class="phone-frame w-56 sm:w-64 shrink-0" aria-hidden="true"><img src="images/com.soccerquiz.soccer_quiz_flutter-653654885082.jpg" alt="" class="w-full h-auto" loading="lazy" decoding="async"></div>
+            <div class="phone-frame w-56 sm:w-64 shrink-0" aria-hidden="true"><img src="images/com.soccerquiz.soccer_quiz_flutter-935882837552.jpg" alt="" class="w-full h-auto" loading="lazy" decoding="async"></div>
+            <div class="phone-frame w-56 sm:w-64 shrink-0" aria-hidden="true"><img src="images/com.soccerquiz.soccer_quiz_flutter-938153259447.jpg" alt="" class="w-full h-auto" loading="lazy" decoding="async"></div>
+            <div class="phone-frame w-56 sm:w-64 shrink-0" aria-hidden="true"><img src="images/com.soccerquiz.soccer_quiz_flutter-988824918185.jpg" alt="" class="w-full h-auto" loading="lazy" decoding="async"></div>
         </div>
     </div>
 </section>
