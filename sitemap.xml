@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://dropball.ir/</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://dropball.ir/images/logo.png</image:loc>
+      <image:title>لوگوی دراپ‌بال</image:title>
+      <image:caption>بازی کوییز فوتبال دراپ‌بال</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://dropball.ir/images/com.soccerquiz.soccer_quiz_flutter-148267939742.jpg</image:loc>
+      <image:title>محیط بازی دراپ‌بال</image:title>
+      <image:caption>مسابقه کوییز فوتبالی دراپ‌بال</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://dropball.ir/images/com.soccerquiz.soccer_quiz_flutter-301288015998.jpg</image:loc>
+      <image:title>سوالات فوتبالی دراپ‌بال</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://dropball.ir/images/com.soccerquiz.soccer_quiz_flutter-341845480733.jpg</image:loc>
+      <image:title>لیدربورد دراپ‌بال</image:title>
+    </image:image>
+  </url>
+</urlset>

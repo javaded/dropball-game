@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Allow crawling of all static assets
+Allow: /images/
+Allow: /manifest.json
+
+Sitemap: https://dropball.ir/sitemap.xml

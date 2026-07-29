@@ -1,0 +1,7 @@
+node_modules/
+npm-debug.log
+.DS_Store
+
+# Tailwind build output (regenerated via `npm run build:css`)
+# Uncomment the next line if you don't want to commit generated CSS:
+# styles.css
